@@ -1,97 +1,63 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "Quote Generator"
+description: "A React app that displays random inspirational quotes with dynamic color-changing backgrounds"
 ---
 
-## Setting up
+Quote Generator is a React application that presents users with random quotes, each displayed with a unique, dynamically changing background color. Click a button to get a new quote and watch the entire interface transform.
 
-Get your documentation site up and running in minutes.
+## Features
+
+<CardGroup cols={2}>
+  <Card title="Random quotes" icon="quote-left">
+    Displays quotes from a curated collection, ensuring you see each quote before any repeats.
+  </Card>
+  <Card title="Dynamic colors" icon="palette">
+    Each new quote comes with a fresh background color, creating a unique visual experience.
+  </Card>
+  <Card title="Social sharing" icon="share">
+    Share your favorite quotes directly to Instagram and Twitter with built-in social buttons.
+  </Card>
+  <Card title="Responsive design" icon="mobile">
+    Works on desktop and mobile devices with a clean, centered quote box layout.
+  </Card>
+</CardGroup>
+
+## Quick start
+
+Get the app running locally in just a few commands.
 
 <Card
-  title="Start here"
+  title="Installation guide"
   icon="rocket"
   href="/quickstart"
   horizontal
 >
-  Follow our three step quickstart guide.
+  Clone the repository and start the development server.
 </Card>
 
-## Make it yours
+## How it works
 
-Design a docs site that looks great and empowers your users.
+The app maintains a list of quotes and tracks which ones have been shown. When you click "New Quote":
 
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
+1. A random unvisited quote is selected
+2. A new background color is chosen from the color palette
+3. Both the quote text and all colored elements update simultaneously
+4. Once all quotes have been shown, the cycle resets
 
-## Create beautiful pages
+## Tech stack
 
-Everything you need to create world-class documentation.
+- **React 18** - Component-based UI framework
+- **Create React App** - Project scaffolding and build tools
+- **CSS** - Custom styling with flexbox layout
+- **randomcolor** - Color generation library (available but not currently used)
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
-
-## Need inspiration?
+## Source code
 
 <Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
+  title="View on GitHub"
+  icon="github"
+  href="https://github.com/yangleyland/quoteGenerator"
+  horizontal
 >
-  Browse our showcase of exceptional documentation sites.
+  Browse the source code, report issues, or contribute to the project.
 </Card>
